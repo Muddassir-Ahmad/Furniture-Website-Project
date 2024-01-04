@@ -1,0 +1,156 @@
+
+/* Add your custom styles for the details page here */
+
+/* Ensure images fit within the container */
+body {
+    font-family: system-ui;
+}
+
+.bed-image {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style for the thumbnail images */
+.thumbnail-img {
+    width: 100px;
+    /* Adjust the width of thumbnails as needed */
+    height: auto;
+
+    cursor: pointer;
+}
+
+.thumbnail-container {
+    text-align: center;
+    margin-top: 20px;
+    /* Adjust the top margin */
+}
+
+
+.selected-thumbnail {
+    border: 2px solid #E04F4F;
+    /* You can adjust the border style as needed */
+    /* Additional styling for the selected thumbnail */
+}
+
+/* Add this to your existing CSS or in the style tag */
+.review-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.review-thumbnail {
+    width: 70px;
+    /* Adjust as needed */
+    height: auto;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* Custom styles for the review form */
+form {
+    margin-top: 20px;
+}
+
+/* Style for invalid feedback */
+.invalid-feedback {
+    color: red;
+    display: none;
+    margin-top: 5px;
+}
+
+/* Style to display invalid feedback */
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+    border-color: red;
+}
+
+.was-validated .form-control:invalid~.invalid-feedback,
+.was-validated .form-control.is-invalid~.invalid-feedback {
+    display: block;
+}
+
+/* Additional CSS for star rating */
+
+.ratting {
+    text-align: left;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+
+.rating input {
+    display: none;
+}
+
+.rating label {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    font-size: 24px;
+    color: #777777;
+}
+
+.rating input:checked~label,
+.rating input:checked~label~label {
+    color: #ffcc00;
+}
+
+/* Define star styles */
+.star-filled {
+    color: #ffcc00;
+    /* Change this to your desired star color */
+}
+
+.star-empty {
+    color: #777777;
+    /* Change this to your desired empty star color */
+}
+
+/* Add this style for the reviews section */
+.reviews-section {
+    background-color: #f5f5f5;
+    /* Change this color to your preferred background color */
+    padding: 20px;
+    /* Add padding as needed */
+    border-radius: 8px;
+    /* Optional: Add border radius for styling */
+}
+
+.tomato-price {
+    color: #E04F4F;
+    /* Use the predefined name for the tomato color */
+    font-weight: bold;
+    /* Any other styles to enhance the appearance */
+}
+
+/* Adjust alignment for the search button */
+@media (max-width: 575.98px) {
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group-append {
+        margin-left: 0;
+        /* Set margin-left to zero */
+    }
+
+    .btn {
+        margin-top: 0.25rem;
+        margin-left: 10px;
+        /* Adjust this value as needed */
+    }
+}
+.custom-container {
+    width: 100%; /* Set your desired width */
+    word-wrap: break-word;
+  }

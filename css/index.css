@@ -1,0 +1,107 @@
+ /* Add your custom styles here */
+/* Example styles */
+/* body {
+    font-family: Arial, sans-serif;
+  } */
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  main {
+    padding: 20px 0;
+  }
+  
+  footer {
+    padding: 20px 0;
+    background-color: #f8f9fa;
+  }
+
+  /* furniture_upload form (furniture_upload.php) */
+  
+ 
+ 
+ /* Additional CSS for larger slider images */
+ #carouselExampleSlidesOnly {
+    cursor: pointer;
+    max-width: 800px;
+    /* Adjust max-width as needed */
+    margin: 0 auto;
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  }
+
+  .full-width-background {
+    background-color: #f8f9fa;
+    /* Change to your preferred background color */
+    padding-top: 30px;
+    /* Adjust top padding as needed */
+    padding-bottom: 30px;
+    /* Adjust bottom padding as needed */
+  }
+
+
+  /* Add this style for floating icons */
+  .floating-icons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+
+  .your-div-class {
+    padding: 2px;
+    transition: box-shadow 0.3s;
+    /* Add a smooth transition effect */
+  }
+
+  .your-div-class:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Add a shadow on hover */
+  }
+
+  /* Adjust alignment for the search button */
+  @media (max-width: 575.98px) {
+    .input-group {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .input-group-append {
+      margin-left: 0;
+      /* Set margin-left to zero */
+    }
+
+    .btn {
+      margin-top: 0.25rem;
+      margin-left: 10px;
+      /* Adjust this value as needed */
+    }
+  }
+
+  /* Zoom effect on image hover */
+  .img-fluid {
+    transition: transform 0.3s ease;
+    /* Add a smooth transition */
+  }
+
+  .img-fluid:hover {
+    transform: scale(1.1);
+    /* Increase the image size on hover */
+  }
+
+  /* Change title color on hover */
+  .text-dark {
+    transition: color 0.3s ease;
+    /* Add a smooth color transition */
+  }
+
+  .text-dark:hover {
+    color: #E04F4F !important;
+    /* Change to your preferred hover color */
+  }

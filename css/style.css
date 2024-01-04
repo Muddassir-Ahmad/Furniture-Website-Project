@@ -1,0 +1,102 @@
+body {
+    font-family: system-ui;
+}
+
+.img-fluid {
+    transition: transform 0.3s ease;
+    /* Add a smooth transition */
+}
+
+.img-fluid:hover {
+    transform: scale(1.1);
+    /* Increase the image size on hover */
+}
+
+/* Change title color on hover */
+.text-dark {
+    transition: color 0.3s ease;
+    /* Add a smooth color transition */
+}
+
+/* Adjust alignment for the search button */
+@media (max-width: 575.98px) {
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group-append {
+        margin-left: 0;
+        /* Set margin-left to zero */
+    }
+
+    .btn {
+        margin-top: 0.25rem;
+        margin-left: 10px;
+        /* Adjust this value as needed */
+    }
+}
+
+.text-dark:hover {
+    color: #E04F4F !important;
+    /* Change to your preferred hover color */
+}
+
+/* Change button color and text */
+
+.btn-outline {
+    color: black;
+    /* Set text color to black */
+    border-color: #16324a;
+    /* Match the navbar color */
+}
+
+.btn-outline:hover {
+    color: white;
+    /* Change text color on hover */
+    background-color: #16324a;
+    /* Match the navbar color on hover */
+}
+
+/* Change dropdown background and text color */
+.dropdown-menu {
+    background-color: #16324a;
+    /* Same color as the navbar */
+    color: white;
+    /* Text color */
+}
+
+.dropdown-menu a {
+    color: white;
+    /* Anchor text color */
+}
+
+.dropdown-menu a:hover {
+    background-color: white;
+    /* Change to your preferred hover color */
+}
+
+.navbar {
+    background-color: #16324a;
+    padding: 10px;
+    
+    /* Change to your preferred color */
+}
+
+footer {
+    padding: 20px 0;
+    background-color: #16324a
+}
+
+footer .container {
+    padding-bottom: 20px;
+    /* Adjust this value as needed */
+    padding-top: 20px;
+    /* Adjust this value as needed */
+}
+.navbar-toggler-icon {
+    background-color: #ffffff; /* Change to white */
+    border-radius: 5px;
+}

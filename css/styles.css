@@ -1,0 +1,77 @@
+/* Basic card styles */
+.card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    flex: 0 0 calc(25% - 20px);
+    margin: 10px;
+    border-radius: 10px;
+   
+    
+}
+
+/* Image styles */
+.card-img-top {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+    display: block; /* Ensure the image behaves as a block element */
+}
+
+/* Card hover effects */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.1);
+    /* Scale the image within the card */
+    transition: transform 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+
+/* Card body styles */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    max-height: 200px; /* Set a maximum height for the card body */
+    overflow: hidden; /* Hide overflow text */
+}
+
+/* Title and text styles */
+.card-title {
+    font-size: 0.9em;
+    margin-bottom: 9px;
+    overflow: hidden; /* Hide overflowing title */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.card-text {
+    font-size: 1em;
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 575.98px) {
+    .input-group {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-group-append {
+        margin-left: 0;
+    }
+
+    .btn {
+        margin-top: 0.25rem;
+        margin-left: 10px;
+    }
+}

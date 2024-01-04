@@ -1,0 +1,183 @@
+table {
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table caption {
+  font-size: 1.5em;
+  margin: .5em 0 .75em;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;
+}
+
+table th,
+table td {
+  padding: .625em;
+  text-align: center;
+  
+}
+
+table th {
+  font-size: .85em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+/* Alternate row colors */
+table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+  /* Color for even rows */
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+  /* Color for odd rows */
+}
+
+/* Hover effect on rows */
+table tbody tr:hover {
+  background-color: #e3e3e3;
+  /* Hover color */
+}
+
+@media screen and (max-width: 600px) {
+  table {
+      border: 0;
+  }
+
+  table caption {
+      font-size: 1.3em;
+  }
+
+  table thead {
+      border: none;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+  }
+
+  table tr {
+      border-bottom: 3px solid #ddd;
+      display: block;
+      margin-bottom: .625em;
+  }
+
+  table td {
+      border-bottom: 1px solid #ddd;
+      display: block;
+      font-size: .8em;
+      text-align: right;
+  }
+
+  table td::before {
+      /*
+* aria-label has no advantage, it won't be read inside a table
+content: attr(aria-label);
+*/
+      content: attr(data-label);
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+  }
+
+  table td:last-child {
+      border-bottom: 0;
+  }
+}
+
+body {
+  background-color: #fbfbfb;
+}
+
+@media (min-width: 991.98px) {
+  main {
+      padding-left: 240px;
+  }
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 58px 0 0;
+  /* Height of navbar */
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+  width: 240px;
+  z-index: 600;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+      width: 100%;
+  }
+}
+
+.sidebar .active {
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+}
+
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* Scrollable contents if viewport is shorter than content. */
+}
+
+/* New style for the dark overlay */
+.dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Adjust opacity here */
+  z-index: 500;
+  display: none;
+  /* Initially hidden */
+}
+
+.dark-overlay.show {
+  display: block;
+  /* Displayed when the 'show' class is applied */
+}
+
+/* Show the overlay when the navbar is toggled on small screens */
+@media (max-width: 991.98px) {
+  .navbar-collapse.collapsing.show+.dark-overlay {
+      display: block;
+  }
+}
+
+/* Rotate class for dropdown icon */
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease;
+  /* Add transition for a smooth effect */
+}
+.sub-menu-options {
+margin-left: 20px; /* Adjust this value as needed */
+}
+/* general styling */
+/* body {
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.25;
+} */
